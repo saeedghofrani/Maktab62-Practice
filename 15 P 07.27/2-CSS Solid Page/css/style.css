@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container img {
+    width: 300px;
+    height: 200px;
+}
+.container h2 {
+    font-family: sans-serif;
+    background-color: #B6D2EC;
+    color: #2D74B9;
+    width: 480px;
+    padding-left: 7px;
+    font-weight: bolder;
+}
+.Courses {
+    width: 485px;
+    border-collapse: collapse;
+}
+.Courses td, .Courses th {
+    border: 2px solid black;
+    padding-left: 5px;
+}
+.form input {
+    width: 150px;
+    margin: 0px;
+    padding: 1px;
+}
+.Courses tr+th {
+    background-color: #ff0000;
+}
+.trColor {
+    color: #6AA5DD;
+}
+#link {
+    text-decoration: none;
+    color: #7181c7;
+}
+#music {
+    font-weight: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.form textarea {
+    width: 180px;
+    height: 80px;
+}
+.fNum {
+    color: #6AA5DD;
+}

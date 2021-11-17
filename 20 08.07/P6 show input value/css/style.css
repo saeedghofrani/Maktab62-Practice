@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #e2e1e0;
+}
+div.container {
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    border-radius: 3px;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.container input {
+    height: 25px;
+    padding-left: 3px;
+}
+div.container div {
+    margin-top: 10px;
+    align-self: center;
+}

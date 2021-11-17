@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.all {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/VdW4TCfoctFYDSXNSnkoAf-970-80.jpg.webp);
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  font-weight: 900;
+  z-index: 1;
+  width: 400px;
+  height: 320px;
+  border-radius: 8px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(3, 3, 3, 0.727);
+}
+div.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid white;
+  width: auto;
+  margin: 8px;
+  height: 40px;
+  background-color: #6c757d;
+  border-radius: 5px;
+}
+.container input {
+  width: 280px;
+  height: auto;
+  background: white;
+  border-radius: 4px 0px 0px 4px;
+  color: #6c757d;
+  padding: 4px;
+  padding-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: end;
+}
+div.detail i {
+  width: 25px;
+  height: 20px;
+  align-self: center;
+  margin-left: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container input[type="button"] {
+  border-radius: 4px;
+  width: 319px;
+  text-align: center;
+  border: 0 solid;
+  background: #28a745;
+  cursor: pointer;
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+div.detail.pannel {
+  background-color: transparent;
+  color: white;
+  font-weight: 900;
+  border: 0px;
+  margin: 0;
+}
+div.detail.register {
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
+div.detail.register a {
+  background-color: transparent;
+  color: #0166f3;
+  text-decoration: none;
+}
+div.detail.username i {
+  margin-left: 10px;
+  font-size: 16px;
+}
+div.detail.inter {
+  border: 0;
+  text-align: center;
+}
+div.detail.username {
+  margin-top: 0;
+}
+.container input[type="button"]:hover {
+  opacity: 0.8;
+}
+.container input[type="button"]:active {
+  opacity: 0.6;
+}
+.container input[type="text"]:focus {
+  border: 5px solid rgba(255, 255, 255, 0.9);
+}
+.container input[type="password"]:focus {
+  border: 5px solid rgba(255, 255, 255, 0.9);
+}
+.container,
+input[type="button"][value],
+input::placeholder {
+  font-weight: 500;
+}

@@ -1,0 +1,76 @@
+body{
+    width: 80%;
+    margin: 10%;
+    padding: 0;
+}
+.mainDiv {
+    padding: 5px;
+    width: 100%;
+}
+.header {
+    background-color: rgb(60, 138, 228);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    vertical-align: middle;
+    margin: auto;
+    width: 100%;
+    padding: auto;
+    height: 55px;
+    padding-top: 25px;
+}
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: inline;
+    float: left;
+    width: 32%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    background: rgb(242, 242, 242);
+}
+.title.one {
+    margin-right: 2%;
+}
+.title.two {
+    margin-right: 2%;
+}
+.box {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto 0px;
+    display: inline;
+    float: left;
+    width: 23%;
+    height: 120px;
+    padding-top: 30px;
+}
+.box.blue {
+    background-color: rgb(60, 138, 228);
+    margin-right: 2%;
+}
+.box.yellow {
+    background-color: rgb(6231, 187, 93);
+    margin-right: 2%;
+}
+.box.green {
+    background-color:  rgb(93, 231, 190);
+    margin-right: 2%;
+}
+.box.red {
+    background-color: rgb(231, 93, 127);
+    width: 25%;
+}
+.detail h4 {
+    font-weight: 900;
+}
+.pTxt {
+    margin: 5px;
+}
+
+
+
+

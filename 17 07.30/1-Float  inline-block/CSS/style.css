@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: solid 2px black;
+    overflow: hidden; 
+    height: auto;
+}
+.box {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: #696969;
+    width: 24%;
+    height: 190px;
+    margin: 2px;
+    display: inline;
+    float: left;
+}
+.up {
+    margin-right: 5px;
+}
+.middle {
+    clear: both;
+}
+.down {
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.down_one {
+    clear: left;
+    margin-top: 5px;
+}
+.down_four {
+    margin-right: 0;
+}
+

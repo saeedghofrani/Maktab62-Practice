@@ -1,0 +1,57 @@
+.container {
+    background-color: white;
+    margin: auto;
+    width: 186px;
+    padding: 10px;
+}
+.box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 3px solid rgb(49, 15, 15);
+}
+.red {
+    background-color: red;
+    float: right;
+    width: 120px;
+    height: 147px;
+    border-left: 2px solid rgb(49, 15, 15);
+}
+.wight1 {
+    float: right;
+    height: 60px;
+    width: 55px;
+}
+.wight2 {
+    float: right;
+    height: 80px;
+    width: 55px;
+    border-top: 4px solid rgb(49, 15, 15);;
+}
+.blue {
+    background-color: blue;
+    float: left;
+    width: 55px;
+    height: 53px;
+}
+.bottum {
+    width: 98px;
+    height: 53px;
+    float: left;
+}
+.yellow {
+    background-color: yellow;
+    float: left;
+    height: 23px;
+    width: 15px;
+    border-top: 5px solid rgb(49, 15, 15);;
+}
+.clearfix {
+    overflow: auto;
+}
+.wightRight {
+    float: left;
+    clear: right;
+    width: 15px;
+    height: 22px;
+}

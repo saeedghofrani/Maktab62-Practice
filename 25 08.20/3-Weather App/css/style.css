@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#callingCode {
+  font-size: 80px;
+}
+
+#map {
+  height: 100%;
+  min-height: 430px;
+}

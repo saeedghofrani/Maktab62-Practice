@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #6867ed;
+  height: 100vh;
+}
+div.container {
+  background-color: white;
+  width: 300px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+div.container .title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(155, 155, 155);
+}
+div.btn {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #828282;
+}
+div.btn.home {
+  background-color: #dbf8ff;
+  color: #4200ff;
+  margin-top: 40px;
+  padding-left: 18px;
+}
+div.buttom {
+  color: #4f4f4f;
+  align-self: center;
+  justify-content: rights;
+  vertical-align: middle;
+  line-height: 500px;
+}
+div.btn.port {
+  padding-left: 16px;
+}
+div.btn:hover {
+  background-color: #dbf8ff;
+  color: #3e06ff;
+}
+div.btn:active {
+  background-color: #96e5f8;
+  color: #2905ae;
+}
+div.btn.contact {
+  padding-left: 17px;
+}
+i.fa.fa-home {
+  padding-right: 4px;
+}
+i.fa.fa-male {
+  padding-right: 6px;
+}
+i.fa.fa-camera {
+  padding-right: 3px;
+}
+i.fa.fa-envelope {
+  padding-right: 3px;
+}

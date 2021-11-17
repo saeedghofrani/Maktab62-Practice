@@ -1,0 +1,157 @@
+.traditional {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.fastFood {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.fastFood td {
+    color: red;
+}
+.traditional td {
+    color: blue;
+}
+.fastFood td.off > span.org_p , .traditional td.off > span.org_p{
+    text-decoration: line-through;
+    color: forestgreen;
+}
+.fastFood td.off > span.off-p, .traditional td.off > span.off-p {
+    text-decoration: underline;
+    color: gold;
+}
+.fastFood td.off > span.off-p, .traditional td.off > span.off-p {
+    font-size: 2rem;
+}
+.maktab62 {
+    text-align: center;
+    direction: ltr;
+    text-indent: 10px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px blue;
+}
+.container {
+    background-color:rgb(7, 7, 7);
+    color: white;
+    text-align: center;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 100px 10px;
+    border-color: rgb(255, 0, 51) rgb(255, 255, 255) rgb(0, 255, 0) rgb(245, 0, 245) ;
+    padding: 10px 6px 8px 20px;
+    margin: 111px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    /* position: initial;
+    display: initial;
+    box-sizing: inherit; */
+    width: auto;
+    height: auto;
+}
+.container2 {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.red {
+    background: linear-gradient(black, red);
+}
+.green {
+    background: linear-gradient(black, green);
+}
+.blue {
+    background: linear-gradient(black, blue);
+}
+.box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 3px solid green;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px  rgb(7, 7, 7);
+}
+.img {
+    width: 200px;
+    float: left;
+    border-radius: 10px;
+    display: block;
+}
+.clear {
+    clear: left;
+}
+.container3 {
+    border: 1px solid black;
+    width: 100%;
+}
+.para {
+    margin: 0;
+    padding: 5px;
+}
+.img2 {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    color: darkgreen;
+    border: 8pc;
+}
+body {
+    font-size: 12px;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+}
+p {
+    font-size: 25px;
+    color: red;
+    text-decoration: underline;
+}
+.global {
+    color: aqua;
+}
+.global {
+    color: violet;
+}
+h1.global {
+    text-decoration: line-through;
+}
+p.global.maktab45 {
+    color: green;
+}
+#maktab45_22 {
+    color: grey;
+}
+.local {
+    color: saddlebrown;
+}
+.local, .global {
+    font-weight: bolder;
+    font-size: 50px;
+} */

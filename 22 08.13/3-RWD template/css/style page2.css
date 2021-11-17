@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    font-family: Segoe UI,Arial,sans-serif;
+    padding: 10px;
+}
+h1 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 35px;
+}
+h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+input {
+    border: 1px solid rgb(135, 135, 135);
+    width: 90%;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+h5 {
+    background-color: #FFFFCC;
+    border-left: 5px solid #ffff5d;
+    width: 90%;
+    padding: 10px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 15px;
+}

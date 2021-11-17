@@ -1,0 +1,19 @@
+p {
+    color: blue 
+}
+
+
+.colorRed {
+    color: red;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+
+#sample1 {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}

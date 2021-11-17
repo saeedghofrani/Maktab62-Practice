@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: cursive;
+}
+#greenBox {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #008001;
+  color: white;
+  border-radius: 3px;
+}

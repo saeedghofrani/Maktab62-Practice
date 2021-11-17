@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="firstSection">
+        <article id="navigation">
+            <nav class="navbar">
+                <div class="logo ">
+                    <a href="#first">
+                        <i class="fa fa-home"></i>&nbsp;
+                        Logo
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="hamberger">
+                        <i id="hamMenu" class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div id="subMenu" class="submenu">
+                    <a href="#team" class="linkHide">Team</a>
+                    <a href="#work" class="linkHide">Work</a>
+                    <a href="#pricing" class="linkHide">Price</a>
+                    <a href="#contact" class="linkHide">Contact</a>
+                    <a href="#first" class="linkHide">Search</a>
+                </div>
+
+
+                <div class="solidMenu">
+                    <div class="solidContainer">
+                        <div class="diiiv">
+                            <a href="#team" class="linkSolid">Team</a>
+                            <a href="#work" class="linkSolid">Work</a>
+                            <a href="#pricing" class="linkSolid">Price</a>
+                            <a href="#contact" class="linkSolid">Contact</a>
+                            <div class="dropContainer">
+                                <div class="parentDropdown">
+                                    Dropdown<i class="fas fa-caret-down"></i>
+                                </div>
+                                <div class="dropdown">
+                                   <p>Link</p>   
+                                    <p>Link</p>  
+                                    <p>Link</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </article>
+
+
+        <article id="first">
+            <div class="picture">
+                <img class="img" src="./picture/sailboat.jpg" alt="sea and boat">
+                <button class="w3css">
+                    LEARN W3.CSS
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <section class="aside">
+        <a class="closeAside" href="">Close <i class="fa fa-remove"></i></a>
+        <a href="#team">Link1</a>
+        <a href="#work">Link2</a>
+        <a href="#work">Link3</a>
+        <a href="#contact">Link4</a>
+        <a href="#first">Link5</a>
+    </section>
+
+
+
+    <section class="modalContainer">
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">X</span>
+                    <p class="phead p3">Oh snap! We just showed you a modal..</p>
+                    <p class="phead p4">Because we can </p>
+                </div>
+                <div class="modal-body">
+                    <p class="phead">Cool huh? Ok, enough teasing around..</p>
+                    <p class="phead">Go to our <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a>
+                        to learn more!</p>
+                </div>
+                <div class="modal-footer">
+                    <p>Modal footer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team col-sm-12">
+        <article class="header">
+            <h1>OUR TEAM</h1>
+            <span>Meet the team - our office rats:</span>
+        </article>
+        <section class="teamProf col-sm-12">
+            <article class="person p-one col-sm-3">
+                <img src="./picture/avatar.jpg" alt="person">
+                <h3>Johnny Walker</h3>
+                <p>Web Designer</p>
+            </article>
+            <article class="person p-two col-sm-3">
+                <img src="./picture/avatar.jpg" alt="person">
+                <h3>Rebecca Flex</h3>
+                <p>Support</p>
+            </article>
+            <article class="person p-three col-sm-3">
+                <img src="./picture/avatar.jpg" alt="person">
+                <h3>Jan Ringo</h3>
+                <p>Boss man</p>
+            </article>
+            <article class="person p-four col-sm-3">
+                <img src="./picture/avatar.jpg" class="col-sm-3" alt="person">
+                <h3>Kai Ringo</h3>
+                <p>Fixer</p>
+            </article>
+        </section>
+    </section>
+
+
+    <section id="work" class="workSection col-sm-12 display-sm-flex-top txtLeft">
+        <article class="worktitle col-sm-3 ">
+            <h2 class="pl-sm-10">Our Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </article>
+        <article class="work centering col-sm-3 priceBox mgt-0 txtLeft">
+            <img src="./picture/snow.jpg" alt="snow mountain">
+            <h3>Customer 1</h3>
+            <h4>Traide</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+        </article>
+        <article class="work centering col-sm-3 priceBox mgt-0 txtLeft">
+            <img src="./picture/lights.jpg" alt="snow mountain">
+            <h3>Customer 2</h3>
+            <h4>Traide</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+        </article>
+        <article class="work centering last col-sm-3 priceBox mgt-0 txtLeft">
+            <img src="./picture/mountains.jpg" alt="snow mountain">
+            <h3>Customer 3</h3>
+            <h4>Traide</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+        </article>
+    </section>
+
+
+    <section id="pricing" class="prices col-sm-12 display-sm-flex-table">
+        <div class="plus">+</div>
+        <article class="priceHead">
+            <h2>PRICING</h2>
+            <p>Choose a pricing plan that fits your needs.</p>
+        </article>
+        <div class="display-sm-flex containerPrice">
+            <article class="priceBox basic col-sm-4">
+                <div>Basic</div>
+                <div class="middlePrice borderT-0"> <b>10GB</b> Storage</div>
+                <div class="middlePrice"> <b>10</b> Emails</div>
+                <div class="middlePrice"> <b>10</b> Domains</div>
+                <div class="middlePrice"> <b>Endless </b> Support</div>
+                <div class="salary"> <span> <i class="fas fa-dollar-sign"></i> 10 </span> <span class="mo">per
+                        month</span>
+                </div>
+                <div class="btnPrice"> <button><i class="fas fa-check"></i>Sign Up</button></div>
+            </article>
+            <article class="priceBox pro col-sm-4">
+                <div class="proF">Pro</div>
+                <div class="middlePrice borderT-0"> <b>25GB</b> Storage</div>
+                <div class="middlePrice"> <b>25</b> Emails</div>
+                <div class="middlePrice"> <b>25</b> Domains</div>
+                <div class="middlePrice"> <b>Endless </b> Support</div>
+                <div class="salary"> <span> <i class="fas fa-dollar-sign"></i> 25 </span> <span class="mo">per
+                        month</span>
+                </div>
+                <div class="btnPrice"> <button><i class="fas fa-check"></i>Sign Up</button></div>
+            </article>
+            <article class="priceBox premium col-sm-4 pt-sm-10 pt-sm-50">
+                <div>Premium</div>
+                <div class="middlePrice borderT-0"> <b>50GB</b> Storage</div>
+                <div class="middlePrice"> <b>50</b> Emails</div>
+                <div class="middlePrice"> <b>50</b> Domains</div>
+                <div class="middlePrice"> <b>Endless </b> Support</div>
+                <div class="salary"> <span> <i class="fas fa-dollar-sign"></i> 50 </span> <span class="mo">per
+                        month</span>
+                </div>
+                <div class="btnPrice"> <button><i class="fas fa-check"></i>Sign Up</button></div>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contactUs display-sm-flex">
+        <article class="txt col-sm-6">
+            <div class="contactHeader">Contact Us</div>
+            <div class="contactAddress">Address</div>
+            <div class="contact">Swing by for a cup of coffee, or whatever.</div>
+            <div class="contact"><i class="fa fa-map-marker"></i> Chucago, US</div>
+            <div class="contact"><i class="fa fa-phone"></i> +00 1515151515</div>
+            <div class="contact"><i class="fa fa-envelope-o"></i>test@test.com</div>
+        </article>
+        <form class="form col-sm-6" action="/Saeed_Ghofrani_hw7_maktab62/CSS/3-RWD%20template/page2.html" target="_blank">
+            <label class="lableTxt" for="text">Name</label>
+            <div class="inputs"> <input id="nameInput" type="text" required> </div>
+            <label class="lableTxt" for="email">Email</label>
+            <div class="inputs"> <input id="emailInput" type="email" required></div>
+            <label class="lableTxt" for="message">Message</label>
+            <div class="inputs"><input id="messageInput" type="text" required></div>
+            <div class="wraper">
+                <div class="check"> <input class="checkbox" name="like" type="checkbox"> <label id="lab" for="check">I
+                        Like It!</label> </div>
+                <div class="checkBtn"><button type="submit" onclick="submitt()" id="submitClick">Send</button></div>
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="contact2">
+        </article>
+        <article class="contactPart1">
+            <div class="mapImg">
+                <img src="./picture/map.jpg" alt="map">
+            </div>
+            <div class=" flex-column contactPart2">
+                <div class="column-item">
+                    <h4>Folow Us</h4>
+                </div>
+                <div class="social disBlock col-12">
+                    <div class="col-8 centerMedia social">
+                        <i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i
+                            class="fab fa-google-plus-g"></i><i class="fab fa-instagram mgr-0 mgr-sm-10"></i>
+                        <i class="hide fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="col-4 goToTop">
+                        <p id="lableGoToTop" >Go To Top</p>
+                        <a href="#first"> <i id="upShape" class="fas fa-chevron-circle-up"></i></a>
+                    </div>
+                </div>
+                <div class="column-item powerd">
+                    <p>Powerd by <span> <a href="https://www.w3schools.com/w3css/default.asp"> w3.css</a></span></p>
+                </div>
+            </div>
+        </article>
+        </section>
+
+        <script src="js/index.js"></script>
+        <script src="js/secondPage.js"></script>
+</body>
+
+</html>

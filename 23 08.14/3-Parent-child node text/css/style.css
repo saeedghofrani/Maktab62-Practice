@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: cursive;
+}
+.div {
+  width: 90%;
+  overflow: hidden;
+  background-color: #00ff01;
+  border: 1px solid black;
+  min-height: 300px;
+}
+#parent {
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+#target {
+  height: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+#child {
+  height: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}

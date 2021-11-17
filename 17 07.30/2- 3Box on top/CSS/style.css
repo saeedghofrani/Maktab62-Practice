@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    position: absolute;               
+    top: 50%;  
+    left: 50%;                       
+    transform: translate(-50%, -50%);
+}
+.child {
+    background-color: yellow;
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.last {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 240px;
+}

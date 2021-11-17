@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+.container {
+    background-color: rgb(0, 193, 237);
+    padding-bottom: 30px;
+    overflow: auto;
+}
+.img {
+    width: 250px;
+    height: 200px;
+    margin-right: 25px;
+    float: right;
+}

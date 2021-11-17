@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  padding-top: 10px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  width: 100%;
+  background-color: rgb(255, 145, 0);
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+  vertical-align: middle;
+}
+hr {
+  border: 1px solid black;
+}
+.menu {
+  width: 300px;
+  margin: 0px;
+  margin-top: 0;
+  margin-left: 0;
+  /* cursor: pointer; */
+}
+.menuPage,
+.menuLink {
+  width: 300px;
+  background-color: rgb(255, 145, 0);
+}
+.menu div {
+  display: none;
+}

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.179);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 80vh;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.522), 0 1px 2px rgba(0, 0, 0, 0.501);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card img {
+  align-self: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 2px;
+  transition: all 0.6s ease-in-out;
+}
+img:hover {
+  filter: blur(2px);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.645), 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+div.login {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+.h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  z-index: 100;
+  transition: all 1s linear;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+form input {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 5px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition-duration: 1s;
+  font-weight: 300;
+}
+button {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.686);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+p {
+  border: 1px solid white;
+  width: 250px;
+  height: 40px;
+  color: red;
+  margin-bottom: 5px;
+  display: none;
+  overflow: auto;
+}
+h1:hover {
+  color:rgba(0, 0, 0, 0.275);
+}
+button:hover {
+  opacity: 0.8;
+}
+button:focus {
+  opacity: 0.5;
+}
+form input:hover {
+  background-color: rgba(0, 0, 0, 0.515);
+}
+form input:focus {
+  background-color: rgba(17, 20, 21, 0.494);
+  width: 300px;
+  color: #000000;
+}
+form input:focus::placeholder {
+  color: transparent;
+}
+/* .errorInput {
+  border: 2px solid red;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+} */

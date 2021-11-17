@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+}
+
+progress {
+  width: 900px;
+  height: 40px;
+  color: blue;
+  background-color: red;
+  margin-bottom: 10px;
+  box-shadow: 9px 9px 30px rgb(39, 39, 37);
+}
+progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #e1a135 !important;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  background-color: crimson;
+  box-shadow: 1px 1px 1px crimson;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 0.5;
+  box-shadow: 1px 1px 1px black;
+}
