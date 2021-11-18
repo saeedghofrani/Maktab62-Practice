@@ -208,7 +208,25 @@ h5.card-title {
 span {
   background-color: rgb(130, 130, 130) !important;
   color: white !important;
+  transition: all 0.4s linear;
 }
+span:hover {
+  cursor: pointer;
+  box-shadow:
+  7px 7px 20px 0px rgba(0, 0, 0, 0.323),
+  4px 4px 5px 0px rgba(0, 0, 0, 0.315),
+  7px 7px 20px 0px rgba(0, 0, 0, 0.364),
+  4px 4px 5px 0px rgba(0, 0, 0, 0.295);
+}
+.modal-footer button:hover {  
+  box-shadow:
+  7px 7px 20px 0px rgba(0, 0, 0, 0.323),
+  4px 4px 5px 0px rgba(0, 0, 0, 0.315),
+  7px 7px 20px 0px rgba(0, 0, 0, 0.364),
+  4px 4px 5px 0px rgba(0, 0, 0, 0.295); 
+  opacity: 1 !important;
+}
+
 
 /*////////////////////////////////////////////////////////
 /* The snackbar - position it at the bottom and in the middle of the screen */

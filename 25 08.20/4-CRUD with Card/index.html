@@ -36,12 +36,12 @@
                 <form class="d-flex px-1">
                     <input class="form-control me-2" type="search" placeholder="Id,Name,LastName" id="search"
                         aria-label="Search">
-                    <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                    <button class="btn btn-outline-success" id="searchBtn" type="button">Search</button>
                 </form>
                 <form class="d-flex m-1">
                     <input class="form-control me-2" type="search" placeholder="View Items" id="itemPerPage"
                         aria-label="Search">
-                    <button class="btn btn-outline-success" onclick="setItemCount()" type="submit">Apply</button>
+                    <button class="btn btn-outline-success" onclick="setItemCount()" type="button">Apply</button>
                 </form>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 <div class="modal-body">
                     <div class="card " style="width: auto;">
                         <img id="imgModal" src="" onclick="addImg()" class="card-img-top " alt="person">
-                        <input type="file" id="imgupload" style="display:none" />
+                        <input id="inputFileToLoad" type="file" style="display:none"  onchange="encodeImageFileAsURL();" />
                         <div class="card-body">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon3">ID:</span>

@@ -1,3 +1,4 @@
+//page 2 and return button//
 $(document).ready(function () {
     $('#back').click(function (e) { 
         e.preventDefault();

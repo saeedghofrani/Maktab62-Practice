@@ -1,9 +1,13 @@
+//main function //
 function refreshUI() {
+    //clear all cards//
     $('#cardSection').html('');
-    for (let i = (pageNum - 1) * itemPerPage; i < (pageNum) * itemPerPage; i++) {
+    //countign cards in page and page numbers//
+    for (let i = (pageNum - 1) * itemPerPage; i < Math.min(result.length, (pageNum) * itemPerPage); i++) {
         createCard(result[i]);
     }
 
+    //making next and Previous button active//
     if (pageNum === 1) {
         $('#Previous').addClass("disabled");
     }
@@ -17,9 +21,10 @@ function refreshUI() {
         $('#Next').removeClass('disabled');
     }
     pagination();
-    $(`#pagination_${pageNum}`).addClass("active");
+    //$(`#pagination_${pageNum}`).addClass("active");
 }
 
+// build cards by an object//
 function createCard(record) {
     $('#cardSection').append(`
     <div class="cardUI mt-4 d-flex justify-content-center  col-12 col-sm-6 col-md-4 p-4">
@@ -35,12 +40,13 @@ function createCard(record) {
     </div>`);
 }
 
+//search function //
 // $('#searchBtn').click(function search(e) {
 //     e.preventDefault();
 //     let inp_search = $('#search').val();
 //     if (inp_search - 1) {
-//         let idFind = result.find(x => x.id === `${inp_search}`)
-//         console.log(idFind); 
+//         let idFind = result.find(x => x.id == (inp_search));
+//         openModal(Number(inp_search));
 //     }
 //     else {
 //         console.log('str');
@@ -48,12 +54,13 @@ function createCard(record) {
 // });
 
 
-
+//set page function and call main function//
 function setPage(page) {
     pageNum = page;
     refreshUI();
 }
 
+//get card number per page by user and make cards again//
 function setItemCount() {
     let inp_item = $('#itemPerPage').val();
 
@@ -67,31 +74,44 @@ function setItemCount() {
     }
     refreshUI();
 }
+
+//build pagination buttons//
 function pagination() {
     $('#pagination').html('');
     for (let i = 0; i < Math.ceil(result.length / itemPerPage); i++) {
-        $('#pagination').append(
-            `<li class="page-item" id="pagination_${i + 1}"><a onclick="setPage(${i + 1})"  class="page-link" href="#">${i + 1}</a></li>`)
+        if (i == pageNum - 1) {
+            console.log(pageNum);
+            $('#pagination').append(
+                `<li class="active page-item" id="pagination_${i + 1}"><a onclick="setPage(${i + 1})"  class="page-link" href="#">${i + 1}</a></li>`);
+        }
+        else
+            $('#pagination').append(
+                `<li class="page-item" id="pagination_${i + 1}"><a onclick="setPage(${i + 1})"  class="page-link" href="#">${i + 1}</a></li>`);
+
     }
 }
 
+//previous button function//
 function previousPage() {
     pageNum--;
     console.log(pageNum);
     refreshUI();
 
 }
+
+//next button function//
 function nextPage() {
     pageNum++;
     refreshUI();
 
 }
 
-
+//open modal and fill the information by id //
 function openModal(id) {
     let btn_edit = $('#editModal');
     btn_remove = $('#removeModal');
     btn_done = $('#doneModal');
+    //if function called by empty tatment mod will be add//
     if (id === undefined) {
         setState('add');
         toester('you are in ADD mode, please fill the table', 'black', 'wight');
@@ -118,6 +138,7 @@ function openModal(id) {
             $('#exampleModal').modal('toggle');
         });
     }
+    //if function called by fill statment mod will be view//
     else {
         let record = get(id);
         setState('view');
@@ -127,6 +148,7 @@ function openModal(id) {
         $('#firstNameModal').val(`${(record.first_name)}`);
         $('#lastNameModal').val(`${(record.last_name)}`);
         $('#emailModal').val(`${(record.email)}`);
+        //remove btn//
         btn_remove.prop("onclick", null).off("click");
         btn_remove.click(function (e) {
             e.preventDefault();
@@ -134,6 +156,7 @@ function openModal(id) {
             refreshUI();
             $('#exampleModal').modal('toggle');
         });
+        //done btn//// to update array
         btn_done.prop("onclick", null).off("click");
         btn_done.click(function (e) {
             e.preventDefault();
@@ -144,19 +167,21 @@ function openModal(id) {
                 last_name: $('#lastNameModal').val(),
                 email: $('#emailModal').val()
             };
+            // validation for object
             if (!isObjectValid(updatePerson)) {
                 alert('empty field detected');
                 return;
             }
             update(updatePerson);
+            //rebuild cards
             refreshUI();
+            //close modal//
             $('#exampleModal').modal('toggle');
         });
     }
 }
-
+//state for showing modal //
 function setState(Mood) {
-    console.log('asdfasdf');
     let btn_edit = $('#editModal');
     btn_remove = $('#removeModal');
     btn_done = $('#doneModal');
@@ -164,7 +189,10 @@ function setState(Mood) {
     inp_firstName = $('#firstNameModal');
     inp_lastName = $('#lastNameModal');
     inp_email = $('#emailModal');
+    inp_avatar = $('#inputFileToLoad');
+    //view mod//
     if (Mood === 'view') {
+        inp_avatar.prop("disabled", true);
         inp_id.prop("disabled", true);
         inp_firstName.prop("disabled", true);
         inp_lastName.prop("disabled", true);
@@ -173,7 +201,9 @@ function setState(Mood) {
         btn_remove.prop("disabled", false);
         btn_edit.prop("disabled", false);
     }
+    //rdit mod//
     if (Mood === 'edit') {
+        inp_avatar.prop("disabled", false);
         inp_id.prop("disabled", true);
         inp_firstName.prop("disabled", false);
         inp_lastName.prop("disabled", false);
@@ -182,7 +212,9 @@ function setState(Mood) {
         btn_remove.prop("disabled", true);
         btn_edit.prop("disabled", true);
     }
+    //add mod//
     if (Mood === 'add') {
+        inp_avatar.prop("disabled", false);
         inp_id.prop("disabled", false);
         inp_firstName.prop("disabled", false);
         inp_lastName.prop("disabled", false);
@@ -193,7 +225,7 @@ function setState(Mood) {
     }
 }
 
-
+// toester that show help//
 function toester(text, color, textColor) {
     // Get the snackbar DIV
     $("#snackbar").css(' background-color', color);
@@ -206,9 +238,26 @@ function toester(text, color, textColor) {
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 
+
+//function to triger input file for image //
 function addImg() {
-    $('#imgupload').trigger('click');
-    var img = document.createElement('img');
-    img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
-    document.getElementById('body').appendChild(img); return false;
+    $('#inputFileToLoad').trigger('click');
+}
+
+//convert image to base64 and use in avatr//
+function encodeImageFileAsURL() {
+
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0) {
+        var fileToLoad = filesSelected[0];
+
+        var fileReader = new FileReader();
+
+        fileReader.onload = function (fileLoadedEvent) {
+            var srcData = fileLoadedEvent.target.result; // <--- data: base64
+
+            document.getElementById("imgModal").src = srcData;
+        }
+        fileReader.readAsDataURL(fileToLoad);
+    }
 }

@@ -8,7 +8,7 @@ function mergeById(array1, array2) {
 function read() {
     console.log(result);
 }
-
+//function to find obj by id//
 function get(id) {
     let i = result.findIndex(x => x.id === id);
     if (i >= 0) {
