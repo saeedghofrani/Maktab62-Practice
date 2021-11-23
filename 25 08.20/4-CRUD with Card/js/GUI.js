@@ -7,18 +7,14 @@ function refreshUI() {
         createCard(result[i]);
     }
     //making next and Previous button active//
-    if (pageNum === 1) {
+    if (pageNum === 1) 
         $('#Previous').addClass("disabled");
-    }
-    else {
+    else 
         $('#Previous').removeClass('disabled');
-    }
-    if (pageNum == (Math.ceil(result.length / itemPerPage))) {
+    if (pageNum == (Math.ceil(result.length / itemPerPage))) 
         $('#Next').addClass('disabled');
-    }
-    else {
+    else
         $('#Next').removeClass('disabled');
-    }
     pagination();
     //$(`#pagination_${pageNum}`).addClass("active");
 }
@@ -246,14 +242,14 @@ function addImg() {
 //convert image to base64 and use in avatr//
 function encodeImageFileAsURL() {
 
-    var filesSelected = document.getElementById("inputFileToLoad").files;
+    let filesSelected = document.getElementById("inputFileToLoad").files;
     if (filesSelected.length > 0) {
-        var fileToLoad = filesSelected[0];
+        let fileToLoad = filesSelected[0];
 
-        var fileReader = new FileReader();
+        let fileReader = new FileReader();
 
         fileReader.onload = function (fileLoadedEvent) {
-            var srcData = fileLoadedEvent.target.result; // <--- data: base64
+            let srcData = fileLoadedEvent.target.result; // <--- data: base64
 
             document.getElementById("imgModal").src = srcData;
         }
