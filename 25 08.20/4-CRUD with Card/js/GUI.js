@@ -6,7 +6,6 @@ function refreshUI() {
     for (let i = (pageNum - 1) * itemPerPage; i < Math.min(result.length, (pageNum) * itemPerPage); i++) {
         createCard(result[i]);
     }
-
     //making next and Previous button active//
     if (pageNum === 1) {
         $('#Previous').addClass("disabled");
