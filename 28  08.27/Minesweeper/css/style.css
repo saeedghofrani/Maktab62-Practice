@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 2px;
+  font-family: cursive;
+  text-shadow: 1px 1px 0px #eb452b, 2px 2px 0px #efa032, 3px 3px 0px #46b59b,
+    4px 4px 0px #017e7f, 5px 5px 0px #052939, 6px 6px 0px #c11a2b,
+    7px 7px 0px #c11a2b, 8px 8px 0px #c11a2b, 9px 9px 0px #c11a2b;
+}
+.header i {
+  margin: 10px;
+}
+.container {
+    
+}
