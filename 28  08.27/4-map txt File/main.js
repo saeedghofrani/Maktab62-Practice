@@ -20,4 +20,4 @@ function write(path , str) {
         else 
             console.log('file has been created and list is ready');
     });
-};
+}
