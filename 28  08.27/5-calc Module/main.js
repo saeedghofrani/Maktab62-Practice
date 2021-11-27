@@ -1,6 +1,7 @@
-let $ = require('./module/calcFunction.js');
+let calc = require('./module/calcFunction.js');
 
-console.log($.sum(2, 4));
-console.log($.Division(2, 4));
-console.log($.Submission(2, 4));
-console.log($.Multiplication(2, 4));
+console.log(calc.sum(2, 4),'\n',
+    calc.Division(2, 4),'\n',
+    calc.Submission(2, 4),'\n',
+    calc.Multiplication(2, 4)
+);

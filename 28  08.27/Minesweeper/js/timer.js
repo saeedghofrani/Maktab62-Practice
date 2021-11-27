@@ -1,9 +1,9 @@
 var defaults = {}
-    , one_second = 1000
-    , one_minute = one_second * 60
-    , one_hour = one_minute * 60
-    , one_day = one_hour * 24
-    , startDate = new Date()
+    , one_second = 1000;
+    , one_minute = one_second * 60;
+    , one_hour = one_minute * 60;
+    , one_day = one_hour * 24;
+    , startDate = new Date();
     , face = document.getElementById('lazy');
 
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/

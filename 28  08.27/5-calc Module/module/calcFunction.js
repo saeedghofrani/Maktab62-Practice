@@ -1,6 +1,8 @@
-let sum = (a, b) => {return c = a + b;};
-let Submission = (a, b) => {return c = a - b;};
-let Multiplication = (a, b) => {return c = a * b;};
-let Division = (a, b) => {return c = a / b;};
+let calculator = {
+    sum: (a, b) => c = a + b,
+    Submission: (a, b) => c = a - b,
+    Multiplication: (a, b) => c = a * b,
+    Division: (a, b) => c = a / b
+}
 
-module.exports = {sum, Submission, Multiplication, Division};
+module.exports = calculator;

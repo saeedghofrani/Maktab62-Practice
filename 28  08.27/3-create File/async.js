@@ -1,10 +1,16 @@
 const fs = require('fs');
-///////////////////////////async//////////////////////
-if (fs.openSync('newFile.txt', 'w'))
-    console.log('Done');
-else
-    console.log('try again');
-if (fs.existsSync('newFile.txt'))
-    console.log('file exists');
-else 
-    console.log('file does not exists');
+////////////////////async//////////////////////////
+try {
+    fs.open('newFile.txt', 'w', function (err) {
+        if (err) throw err;
+        console.log('Done');
+        fs.access('newFile.txt', fs.F_OK, (err) => {
+            if (err)
+                throw 'file does not exists';
+            console.log('file exists');
+        });
+    });
+} catch {
+
+}
+

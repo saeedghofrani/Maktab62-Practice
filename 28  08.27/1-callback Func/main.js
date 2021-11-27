@@ -1,6 +1,3 @@
-//variables//
-let fName = 'saeed';
-let lName = 'ghofrani';
 //callback function//
 function print(string) {  
     console.log(string);
@@ -11,4 +8,4 @@ function fullName(firstName, lastName, cbf) {
     cbf(result);
 }
 //calling function//
-fullName(fName, lName, print);
+fullName('saeed', 'ghofrani', print);

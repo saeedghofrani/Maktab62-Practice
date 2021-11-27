@@ -1,7 +1,6 @@
 let mergeArray = (array1, array2) => {
     //remove counters//
-    Array.prototype.unique = function () {
-        var a = this.concat();
+    unique = (a) => {
         for (let i = 0; i < a.length; ++i) {
             for (let j = i + 1; j < a.length; ++j) {
                 if (a[i] === a[j])
@@ -14,9 +13,9 @@ let mergeArray = (array1, array2) => {
     //push 2 array in 1//
     let result = [];
     for (let i = 0; i < array1.length; i++) {
-        if (array1[i][0] == array2[i][0]) {
-            result.push([...array1[i], ...array2[i]].unique());
-        }
+        if (array1[i][0] == array2[i][0])
+            result.push([...array1[i], ...array2[i]]);
+            unique(result[i]);
     }
     return result;
 };
