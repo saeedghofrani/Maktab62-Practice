@@ -12,7 +12,9 @@ app.get('/css/style.css', (req, res) => {
 app.get('/js/main.js', (req, res) => {
     return res.sendFile(path.join(__dirname,'../../pages/practiceTwoPage/js/main.js'));
 });
-
+app.get('/download.jpg', (req, res) => {
+    return res.sendFile(path.join(__dirname,'../../pages/practiceTwoPage/js/main.js'));
+});
 
 app.listen(5000);
 console.log('server listening on port 5000');
