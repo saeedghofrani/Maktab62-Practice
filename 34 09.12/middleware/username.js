@@ -1,19 +1,23 @@
-let userNameValidation = (req, res, next, message) => {
+const express = require('express');
+const router = express.Router();
+const bodyParser = require('body-parser');
+
+let response;
+router.use('/', function(req, res, next) {
     if (req.body.username) {
         let json_username = req.body.username;
         if (json_username.length > 3 && json_username.length < 11) {
-            next();
+            response += "is OK";
         }
         else {
-            res.write("the length of username must be between 3 and 10 characters");
-            next();
+            response =+ "the length of username must be between 3 and 10 characters";
         }
     }
     else {
-        res.write("username does not exist");
-        next();
+        response += "username does not exist";
+
     }
+    next(response);
+});
 
-};
-
-module.exports = userNameValidation;
+module.exports = router;

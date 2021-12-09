@@ -1,4 +1,8 @@
-let phoneNumberValidation = (req, res, next) => {
+const express = require('express');
+const router = express.Router();
+const bodyParser = require('body-parser');
+
+router.use('/', function(req, res, next) {
     if (req.body.phoneNumber) {
         let json_phoneNumber = req.body.phoneNumber;
         if (json_phoneNumber.length > 11 || json_phoneNumber.length < 11) {
@@ -17,7 +21,5 @@ let phoneNumberValidation = (req, res, next) => {
         res.write("phone number does not exist");
         next();
     }
-
-};
-
-module.exports = phoneNumberValidation;
+});
+module.exports = router;

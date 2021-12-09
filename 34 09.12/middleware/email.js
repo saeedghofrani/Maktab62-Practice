@@ -1,4 +1,8 @@
-let emailValidation = (req, res, next) => {
+const express = require('express');
+const router = express.Router();
+const bodyParser = require('body-parser');
+
+router.use('/', function(req, res, next) {
     if (req.body.email) {
         let json_email = req.body.email;
         if (json_email.match(
@@ -14,7 +18,6 @@ let emailValidation = (req, res, next) => {
         res.write("email does not exist");
         next();
     }
+});
 
-};
-
-module.exports = emailValidation;
+module.exports = router;
