@@ -8,7 +8,7 @@ function errorHandler(response, request, next) {
     if (request.accepts('html')) {
         return response.sendFile(path.join(__dirname, '../pages/notFound/404page.html'),
             (err) => {
-                err ? next(err) : console.log('Sent:', '404page');
+                err ? next(err) : console.log('Sent:', 'page');
             });
     }
     // respond with json

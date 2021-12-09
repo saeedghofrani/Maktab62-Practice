@@ -16,7 +16,7 @@ app.use((req, res, next) => {
     if (req.accepts('html')) {
         return res.sendFile(path.join(__dirname, './pages/notFound/404page.html'),
             (err) => {
-                err ? next(err) : console.log('Sent:', '404page');
+                err ? next(err) : console.log('Sent:', 'page');
             });
     }
     // respond with json
