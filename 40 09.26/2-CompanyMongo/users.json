@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "Nicholas",
+        "lastName": "Runolfsdottir V",
+        "socialSecurityNumber": "1245879645",
+        "gender": "male",
+        "dateOfBirth": "1345/52/23"
+    },
+    {
+        "firstName": "tom",
+        "lastName": "avalan",
+        "socialSecurityNumber": "3235435465",
+        "gender": "male",
+        "dateOfBirth": "1000/21/23"
+    },
+    {
+        "firstName": "saeed",
+        "lastName": "ghofrani",
+        "socialSecurityNumber": "9876543210",
+        "gender": "male",
+        "dateOfBirth": "1500/32/44"
+    },
+    {
+        "firstName": "eli",
+        "lastName": "Rashford",
+        "socialSecurityNumber": "546982173",
+        "gender": "female",
+        "dateOfBirth": "1399/99/99"
+    },
+    {
+        "firstName": "monnnnnna",
+        "lastName": "POrrr",
+        "socialSecurityNumber": "24599687",
+        "gender": "female",
+        "dateOfBirth": "12/12/12"
+    },
+    {
+        "firstName": "people",
+        "lastName": "Londen",
+        "socialSecurityNumber": "1111111111",
+        "gender": "female",
+        "dateOfBirth": "200/02/03"
+    },
+    {
+        "firstName": "lastOne",
+        "lastName": "fromTop",
+        "socialSecurityNumber": "2222222222",
+        "gender": "male",
+        "dateOfBirth": "4531/00/01"
+    }
+]
